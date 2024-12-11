@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Demo from "@/components/custom/Demo"
+import Footer from "@/components/custom/Demo"
 /**
  * The main page of the app.
  *
@@ -32,7 +32,7 @@ export default function Home() {
           height={38}
           priority
         />
- <Demo />
+
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
@@ -71,7 +71,10 @@ export default function Home() {
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        {
+        
+        <Footer />
+        /* <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
@@ -115,7 +118,7 @@ export default function Home() {
             height={16}
           />
           Go to nextjs.org →
-        </a>
+        </a> */}
       </footer>
     </div>
   );
