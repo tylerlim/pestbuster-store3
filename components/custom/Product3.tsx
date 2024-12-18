@@ -4,11 +4,11 @@ import { Box, Flex, Grid, Heading, Image, Text,
 
  } from "@chakra-ui/react";
 import { promises as fs } from 'fs';
-import { 
-  HomeIcon, 
-  BuildingIcon, 
-  DropletIcon,
-} from 'lucide-react';
+// import { 
+//   HomeIcon, 
+//   BuildingIcon, 
+//   DropletIcon,
+// } from 'lucide-react';
 
 // import content from "@/components/resource/ItemLizardRep.json";
 
