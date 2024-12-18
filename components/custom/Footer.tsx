@@ -7,9 +7,9 @@ import React from 'react';
 //   IconButton, 
 //   Flex 
 // } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { colorPalettes } from "@/components/compositions/color-palettes"
-import { Button } from "@/components/ui/button"
+// import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+// import { colorPalettes } from "@/components/compositions/color-palettes"
+// import { Button } from "@/components/ui/button"
 import { Box, SimpleGrid, Text, Link, Stack, Badge } from '@chakra-ui/react';
 
 const Footer = () => {

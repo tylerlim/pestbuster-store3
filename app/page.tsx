@@ -1,8 +1,6 @@
-import Image from "next/image";
+
 import Footer from "@/components/custom/Footer"
 import Header from "@/components/custom/Header"
-import ProductPage from "@/components/custom/Product";
-import ProductPage2 from "@/components/custom/Product2";
 import ProductPage3 from "@/components/custom/Product3";
 /**
  * The main page of the app.

@@ -1,11 +1,46 @@
 import React from "react";
-import { Box, Button, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Image, Text,
+  VStack, GridItem, Container,
+
+ } from "@chakra-ui/react";
 import { promises as fs } from 'fs';
+import { 
+  HomeIcon, 
+  BuildingIcon, 
+  DropletIcon,
+} from 'lucide-react';
+
 // import content from "@/components/resource/ItemLizardRep.json";
 
 
 
 async function ProductPage3() {
+  const residentialAreas = [
+    '700sqft', 
+    'Kitchen counters', 
+    'Pantry shelves', 
+    'Bathroom windows', 
+    'Bedroom corners', 
+    'Behind picture frames', 
+    'On top of refrigerator'
+  ];
+
+  const commercialAreas = [
+    'Food preparation areas', 
+    'Storage rooms', 
+    'Reception zones', 
+    'Warehouse corners', 
+    'Office equipment spaces'
+  ];
+
+  const targetCustomers = [
+    'Homeowners', 
+    'Property Managers', 
+    'Restaurateurs', 
+    'Facility Managers', 
+    'Hospitality Businesses', 
+    'Warehouse Operations'
+  ];
   const file = await fs.readFile(process.cwd() + '/app/resource/LizardRep.json', 'utf8');
   const data = JSON.parse(file);
   return (
@@ -50,11 +85,10 @@ async function ProductPage3() {
             Add To Cart
           </Button> */}
         </Box>
-
         {/* Right Section */}
         <Box position="relative">
           <Image
-            src="https://via.placeholder.com/300" // Replace with actual product image
+            src={data.header.image} // Replace with actual product image
             alt="Emerald Glow Oil"
             borderRadius="md"
             boxShadow="lg"
@@ -78,42 +112,120 @@ async function ProductPage3() {
         bg="gray.50"
         textAlign="center"
       >
-        <Box>
-          <Text fontWeight="bold" color="green.400">
-            100% Organic
-          </Text>
-          <Text>INGREDIENTS</Text>
-        </Box>
-        <Box>
-          <Text fontWeight="bold" color="green.400">
-            9 variations
-          </Text>
-          <Text>FLAVORS</Text>
-        </Box>
-        <Box>
-          <Text fontWeight="bold" color="green.400">
-            335ml
-          </Text>
-          <Text>VOLUME</Text>
-        </Box>
-        <Box>
-          <Text fontWeight="bold" color="green.400">
-            Free
-          </Text>
-          <Text>DELIVERY</Text>
-        </Box>
+        {data.infoGrid.map((item: { title: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; subtitle: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; }, index: React.Key | null | undefined) => (
+          <Box key={index}>
+            <Text fontSize="lg" fontWeight="bold" color="green.500">
+              {item.title}
+            </Text>
+            <Text>{item.subtitle}</Text>
+          </Box>
+        ))}
       </Grid>
 
+      <Container maxW="container.xl" py={10}>
+      <VStack  align="stretch">
+        <Box textAlign="center">
+          <Heading as="h1" size="2xl" mb={4}>
+            Lizard Rep
+          </Heading>
+          <Text fontSize="xl" color="gray.600">
+            Natural Lizard Repellent Solution
+          </Text>
+        </Box>
+
+        <Grid templateColumns={['1fr', 'repeat(3, 1fr)']} gap={6}>
+          <GridItem>
+            <Box bg="green.50" p={6} borderRadius="lg">
+              <Flex alignItems="center" mb={4}>
+                {/* <Icon as={HomeIcon} w={8} h={8} color="green.500" mr={3}/> */}
+                <Heading size="lg">Residential Coverage</Heading>
+              </Flex>
+              {residentialAreas.map((area) => (
+                <Text key={area} pl={11} mb={1}>
+                  • {area}
+                </Text>
+              ))}
+            </Box>
+          </GridItem>
+
+          <GridItem>
+            <Box bg="blue.50" p={6} borderRadius="lg">
+              <Flex alignItems="center" mb={4}>
+                {/* <Icon as={BuildingIcon} w={8} h={8} color="blue.500" mr={3}/> */}
+                <Heading size="lg">Commercial Coverage</Heading>
+              </Flex>
+              {commercialAreas.map((area) => (
+                <Text key={area} pl={11} mb={1}>
+                  • {area}
+                </Text>
+              ))}
+            </Box>
+          </GridItem>
+
+          <GridItem>
+            <Box bg="purple.50" p={6} borderRadius="lg">
+              <Flex alignItems="center" mb={4}>
+                {/* <Icon as={DropletIcon} w={8} h={8} color="purple.500" mr={3}/> */}
+                <Heading size="lg">Perfect For</Heading>
+              </Flex>
+              {targetCustomers.map((customer) => (
+                <Text key={customer} pl={11} mb={1}>
+                  • {customer}
+                </Text>
+              ))}
+            </Box>
+          </GridItem>
+        </Grid>
+
+        <Box bg="gray.100" p={6} borderRadius="lg">
+          <Heading size="lg" mb={4} textAlign="center">
+            How It Works
+          </Heading>
+          <VStack align="stretch">
+            <Flex alignItems="center">
+              {/* <Icon as={DropletIcon} w={6} h={6} color="teal.500" mr={3}/> */}
+              <Text>
+                Made from natural repellent properties of Neem and Elderflower
+              </Text>
+            </Flex>
+            <Flex alignItems="center">
+              {/* <Icon as={DropletIcon} w={6} h={6} color="teal.500" mr={3}/> */}
+              <Text>
+                Creates an invisible barrier that effectively deters lizards
+              </Text>
+            </Flex>
+            <Flex alignItems="center">
+              {/* <Icon as={DropletIcon} w={6} h={6} color="teal.500" mr={3}/> */}
+              <Text>
+                No harsh chemicals or messy applications
+              </Text>
+            </Flex>
+          </VStack>
+        </Box>
+
+        <Box bg="green.100" p={6} borderRadius="lg" textAlign="center">
+          <Heading size="lg" mb={4}>
+            Simple Application
+          </Heading>
+          <VStack >
+            <Text>1. Identify problem areas</Text>
+            <Text>2. Tear off the back sticker</Text>
+            <Text>3. Place Lizard Rep cube</Text>
+            <Text fontWeight="bold" color="green.700">
+              Enjoy 90-days of lizard-free environment!
+            </Text>
+          </VStack>
+        </Box>
+      </VStack>
+    </Container>
+
       {/* About Us Section */}
-      <Box textAlign="center" py="10" px="6">
+      {/* <Box textAlign="center" py="10" px="6">
         <Heading>About Us</Heading>
         <Text maxW="600px" mx="auto" mt="4">
           {data.aboutUs.description}
-          {/* Meet Emerald, the green goddess of facial oils. Emerald Deep Moisture
-          Glow Oil provides skin with rich moisture and a glow that is lit – all
-          in a lightweight, quick-absorbing formula. All hail, Queen Emerald. */}
         </Text>
-      </Box>
+      </Box> */}
 
       {/* Bottom Banner */}
       <Flex justify="center" align="center" py="10" bg="gray.100" gap="4">
@@ -122,7 +234,8 @@ async function ProductPage3() {
           alt="Plant Image"
           w="100px"
         />
-        <Heading fontSize="2xl">Best Cosmetic Products</Heading>
+        <Heading fontSize="2xl">
+          {data.banner.text} {/* Best Cosmetic Products*/}</Heading>
       </Flex>
     </Box>
   );
