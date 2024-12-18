@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Footer from "@/components/custom/Footer"
 import Header from "@/components/custom/Header"
+import ProductPage from "@/components/custom/Product";
+import ProductPage2 from "@/components/custom/Product2";
+import ProductPage3 from "@/components/custom/Product3";
 /**
  * The main page of the app.
  *
@@ -25,9 +28,12 @@ export default function Home() {
 
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <Header/>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
       
-        <Image
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      {/* <ProductPage /> */}
+      {/* <ProductPage2 /> */}
+      <ProductPage3 />
+        {/* <Image
           className="dark:invert"
           src="/next.svg"
           alt="Next.js logo"
@@ -71,7 +77,8 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
+      
       </main>
       <Footer />
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
