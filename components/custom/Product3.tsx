@@ -112,7 +112,7 @@ async function ProductPage3() {
         bg="gray.50"
         textAlign="center"
       >
-        {data.infoGrid.map((item, index) => (
+        {data.infoGrid.map((item: { title: string; subtitle: string }, index: number) => (
           <Box key={index}>
             <Text fontSize="lg" fontWeight="bold" color="green.500">
               {item.title}
