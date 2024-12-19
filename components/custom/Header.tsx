@@ -4,7 +4,8 @@ import {
   Flex,
   Heading,
   Link,
-  Spacer
+  Spacer,
+  Image
 } from '@chakra-ui/react';
 
 const Header = () => {
@@ -19,24 +20,41 @@ const Header = () => {
       width="100%"
     >
       <Flex alignItems="center" maxW="1440px" mx="auto">
-        <Heading size="md">
-          <Link href="/">Xplore</Link>
-        </Heading>
+      <Heading size="md">
+      <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+      <Image 
+          src="/images/PestBusterStore_Tran.png"
+          alt="Pest Buster Store Logo"
+          width={150}
+          height={40}
+          style={{
+            objectFit: 'contain',
+            width: '20',
+            height: '20'
+          }}/>
+  </Link>
+</Heading>
 
         <Spacer />
 
         <Flex>
-          <Link href="/travel-guide" px={4}>
-            Travel Guide
+          <Link href="/travel-guide" px={4} color="black">
+            Product
           </Link>
-          <Link href="/famous-places" px={4}>
-            Famous Places
+          <Link href="/famous-places" px={4} color="black">
+            Story
           </Link>
-          <Link href="/contact-us" px={4}>
+          <Link href="/contact-us" px={4} color="black">
             Contact Us
           </Link>
-          <Link href="/bookings" px={4} color="pink.500">
-            Bookings
+                   <Link 
+            href="https://shopee.com.my/pestbuster.os" 
+            target="_blank"
+            rel="noopener noreferrer"
+            px={4} 
+            color="yellow.600"
+          >
+            Buy Now
           </Link>
         </Flex>
       </Flex>
