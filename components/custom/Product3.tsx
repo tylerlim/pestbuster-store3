@@ -41,7 +41,7 @@ async function ProductPage3() {
     'Hospitality Businesses', 
     'Warehouse Operations'
   ];
-  const file = await fs.readFile(process.cwd() + '/app/resource/LizardRep.json', 'utf8');
+  const file = await fs.readFile(process.cwd() + '/app/resource/LizardRep.json?ver=1', 'utf8');
   const data = JSON.parse(file);
   return (
     <Box bg="white" color="gray.700" maxW="100vw" mx="auto">
