@@ -4,7 +4,8 @@
     "title": "Emerald Deep",
     "subtitle": "Moisture Glow Oil",
     "description": "A beautiful, long-misunderstood plant whose true powers are just starting to be known. What we know so far is that its many parts and constituents aid in everything from anxiety to physical pain management to beautifying properties.",
-    "buttonText": "Add To Cart"
+    "buttonText": "Add To Cart",
+    "image": "/images/LizardRep.png"
   },
   "infoGrid": [
     { "title": "100% Organic", "subtitle": "INGREDIENTS" },
