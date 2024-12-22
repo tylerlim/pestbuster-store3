@@ -14,60 +14,69 @@ import { Box, SimpleGrid, Text, Link, Stack, Badge } from '@chakra-ui/react';
 
 const Footer = () => {
   return (
-    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center w-full">
-  <Box bg="gray.100" color="gray.700" py={10} w="full">
-    <SimpleGrid columns={[2, null, 4]} gap={8} px={10}>
-      <Stack align="flex-start">
-        <Text fontWeight="bold" mb={2}>
-          Product
-        </Text>
-        <Link href="#">Overview</Link>
-        <Link href="#">
-          Features <Badge colorScheme="green">New</Badge>
-        </Link>
-        <Link href="#">Tutorials</Link>
-        <Link href="#">Pricing</Link>
-        <Link href="#">Releases</Link>
-      </Stack>
-      <Stack align="flex-start">
-        <Text fontWeight="bold" mb={2}>
-          Company
-        </Text>
-        <Link href="#">About Us</Link>
-        <Link href="#">Press</Link>
-        <Link href="#">Careers</Link>
-        <Link href="#">Contact Us</Link>
-        <Link href="#">Partners</Link>
-      </Stack>
-      <Stack align="flex-start">
-        <Text fontWeight="bold" mb={2}>
-          Legal
-        </Text>
-        <Link href="#">Cookies Policy</Link>
-        <Link href="#">Privacy Policy</Link>
-        <Link href="#">Terms of Service</Link>
-        <Link href="#">Law Enforcement</Link>
-        <Link href="#">Status</Link>
-      </Stack>
-      <Stack align="flex-start">
-        <Text fontWeight="bold" mb={2}>
-          Follow Us
-        </Text>
-        <Link href="#">Facebook</Link>
-        <Link href="#">Twitter</Link>
-        <Link href="#">Dribbble</Link>
-        <Link href="#">Instagram</Link>
-        <Link href="#">LinkedIn</Link>
-      </Stack>
-    </SimpleGrid>
-    <Box textAlign="center" mt={10}>
-      <Text fontSize="sm">© 2022 Chakra Templates. All rights reserved</Text>
-      <Text mt={2} fontWeight="bold">
-        logoipsum
-      </Text>
-    </Box>
-  </Box>
-</footer>
+    <footer className="w-full bg-gray-50 mt-auto">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Product Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-gray-900">Product</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Overview</a></li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900 inline-flex items-center">
+                  Features
+                  <Badge className="ml-2 bg-gray-900 text-white text-xs">New</Badge>
+                </a>
+              </li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Tutorials</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Pricing</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Releases</a></li>
+            </ul>
+          </div>
+
+          {/* Company Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-gray-900">Company</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Press</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Careers</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Contact Us</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Partners</a></li>
+            </ul>
+          </div>
+
+          {/* Legal Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-gray-900">Legal</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Law Enforcement</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Status</a></li>
+            </ul>
+          </div>
+
+          {/* Follow Us Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-gray-900">Follow Us</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Facebook</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Twitter</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Dribbble</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">Instagram</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <p className="text-center text-gray-500 text-sm">
+            © 2024 Logoipsum. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 

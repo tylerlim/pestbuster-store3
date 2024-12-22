@@ -5,8 +5,15 @@ import {
   Heading,
   Link,
   Spacer,
-  Image
+  Image,
+  Menu, Button
 } from '@chakra-ui/react';
+import {
+  MenuContent,
+  MenuItem,
+  MenuRoot,
+  MenuTrigger,
+} from "@/components/ui/menu"
 
 const Header = () => {
   return (
@@ -38,13 +45,46 @@ const Header = () => {
         <Spacer />
 
         <Flex>
-          <Link href="/travel-guide" px={4} color="black">
+        <MenuRoot>
+        <MenuTrigger asChild px={4} color="black">
+          <Button variant="outline" size="sm">
+            Product
+          </Button>
+        </MenuTrigger>
+        <MenuContent>
+          <MenuItem value="category1">
+            <Link href="/lizardProduct">Lizard</Link>
+          </MenuItem>
+          <MenuItem value="category2">
+            <Link href="/products/category2">Category 2</Link>
+          </MenuItem>
+          <MenuItem value="category3">
+            <Link href="/products/category3">Category 3</Link>
+          </MenuItem>
+        </MenuContent>
+      </MenuRoot>
+  <Link href="/story" px={4} color="black">
+    Story
+  </Link>
+  <Link href="/contact" px={4} color="black">
+    Contact Us
+  </Link>
+  <Link
+    href="https://shopee.com.my/pestbuster.os"
+    target="_blank"
+    rel="noopener noreferrer"
+    px={4}
+    color="yellow.600"
+  >
+    Shop Now
+  </Link>
+          {/* <Link href="/products" px={4} color="black">
             Product
           </Link>
-          <Link href="/famous-places" px={4} color="black">
+          <Link href="/story" px={4} color="black">
             Story
           </Link>
-          <Link href="/contact-us" px={4} color="black">
+          <Link href="/contact" px={4} color="black">
             Contact Us
           </Link>
                    <Link 
@@ -52,10 +92,10 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             px={4} 
-            color="yellow.600"
+            color="yellow.600" 
           >
-            Buy Now
-          </Link>
+            Shop Now
+          </Link> */}
         </Flex>
       </Flex>
     </Box>
