@@ -14,11 +14,11 @@ const CompanyStory = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <p className="text-gray-700">
-              Chubbies was founded in 2011 by a group of friends who found the traditional world of men&apos;s capital-F "Fashion" completely unrelatable. We saw pictures of shirtless men with rippling ab muscles, some standing outside of storefronts coating you with cologne, with the message of "if only you buy our clothes you can try to be as cool as we are" - and we were absolutely repelled.
+              Chubbies was founded in 2011 by a group of friends who found the traditional world of men&apos;s capital-F &quot;Fashion&quot; completely unrelatable. We saw pictures of shirtless men with rippling ab muscles, some standing outside of storefronts coating you with cologne, with the message of &quot;if only you buy our clothes you can try to be as cool as we are&quot; - and we were absolutely repelled.
             </p>
             
             <p className="text-gray-700">
-              At the same time, we saw that "shorts" in the marketplace were getting longer and longer, with more and more fabrication/zip/zip-ties & whoseewhatsis all over them. Where were the proper length men&apos;s shorts that defined generations of shortsmen?
+              At the same time, we saw that &quot;shorts&quot; in the marketplace were getting longer and longer, with more and more fabrication/zip/zip-ties & whoseewhatsis all over them. Where were the proper length men&apos;s shorts that defined generations of shortsmen?
             </p>
           </div>
           
