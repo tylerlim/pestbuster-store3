@@ -1,15 +1,22 @@
-"use client";
-import { Card } from "@chakra-ui/react"
+// File: pages/product.js
+import Footer from "@/components/custom/Footer";
+import Header from "@/components/custom/Header";
+// import ProductPage3 from "@/components/custom/Product3";
+import ContactUs from "@/components/custom/ContactUs";
 
-export default function Contact() {
+export default function CompanyStoryPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 py-8">
-      <Card.Root className="p-6">
-        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-        <p className="text-gray-700 mb-4">
-          Have questions? We&apos;re here to help. Reach out to our team for support.
-        </p>
-      </Card.Root>
-    </main>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+   
+   <Header />
+      {/* <header>
+        <h1 className="text-3xl font-bold mb-4">Product Page</h1>
+      </header> */}
+      <main>
+        <ContactUs />
+      </main>
+
+    <Footer />
+    </div>
   );
 }
