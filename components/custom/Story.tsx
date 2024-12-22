@@ -14,11 +14,11 @@ const CompanyStory = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <p className="text-gray-700">
-              Chubbies was founded in 2011 by a group of friends who found the traditional world of men's capital-F "Fashion" completely unrelatable. We saw pictures of shirtless men with rippling ab muscles, some standing outside of storefronts coating you with cologne, with the message of "if only you buy our clothes you can try to be as cool as we are" - and we were absolutely repelled.
+              Chubbies was founded in 2011 by a group of friends who found the traditional world of men&apos;s capital-F "Fashion" completely unrelatable. We saw pictures of shirtless men with rippling ab muscles, some standing outside of storefronts coating you with cologne, with the message of "if only you buy our clothes you can try to be as cool as we are" - and we were absolutely repelled.
             </p>
             
             <p className="text-gray-700">
-              At the same time, we saw that "shorts" in the marketplace were getting longer and longer, with more and more fabrication/zip/zip-ties & whoseewhatsis all over them. Where were the proper length men's shorts that defined generations of shortsmen?
+              At the same time, we saw that "shorts" in the marketplace were getting longer and longer, with more and more fabrication/zip/zip-ties & whoseewhatsis all over them. Where were the proper length men&apos;s shorts that defined generations of shortsmen?
             </p>
           </div>
           
@@ -27,12 +27,14 @@ const CompanyStory = () => {
               src="/images/apple.jpg" 
               alt="Men by the pool" 
               className="w-full rounded-lg shadow-md"
+              width={500}
+              height={500}
             />
           </div>
         </div>
         
         <p className="text-gray-700">
-          Not only were shorts becoming completely unrecognizable, but they were also losing their personality, their craftsmanship. No one was focusing on this forgotten category of men's apparel, when it's a product that's so vital to get right.
+          Not only were shorts becoming completely unrecognizable, but they were also losing their personality, their craftsmanship. No one was focusing on this forgotten category of men&apos;s apparel, when it&apos;s a product that&apos;s so vital to get right.
         </p>
         
         <div className="grid md:grid-cols-2 gap-6">
@@ -41,6 +43,8 @@ const CompanyStory = () => {
               src="/images/apple.jpg" 
               alt="Person skateboarding" 
               className="w-full rounded-lg shadow-md"
+              width={500}
+              height={500}
             />
           </div>
           
