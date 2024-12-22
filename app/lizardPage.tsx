@@ -1,6 +1,5 @@
 // File: pages/product.js
 import ProductPage3 from "@/components/custom/Product3";
-import { useRouter } from 'next/router'
 
 export default function lizardPage() {
   return (

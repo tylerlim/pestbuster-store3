@@ -1,8 +1,8 @@
 import Footer from "@/components/custom/Footer"
 import Header from "@/components/custom/Header"
-import ProductPage3 from "@/components/custom/Product3";
+// import ProductPage3 from "@/components/custom/Product3";
 import CompanyStory from "@/components/custom/Story";
-import { Link } from "@chakra-ui/react";
+// import { Link } from "@chakra-ui/react";
 /**
  * The main page of the app.
  *

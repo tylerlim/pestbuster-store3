@@ -1,6 +1,7 @@
 import { Card } from "@chakra-ui/react"
-import { Avatar } from "@/components/ui/avatar"
+// import { Avatar } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const CompanyStory = () => {
   return (
@@ -22,7 +23,7 @@ const CompanyStory = () => {
           </div>
           
           <div>
-            <img 
+            <Image  
               src="/images/apple.jpg" 
               alt="Men by the pool" 
               className="w-full rounded-lg shadow-md"
@@ -36,7 +37,7 @@ const CompanyStory = () => {
         
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <img 
+            <Image 
               src="/images/apple.jpg" 
               alt="Person skateboarding" 
               className="w-full rounded-lg shadow-md"

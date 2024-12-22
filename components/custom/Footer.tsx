@@ -1,16 +1,5 @@
 import React from 'react';
-// import { 
-//   Box, 
-//   Container, 
-//   Stack, 
-//   Text, 
-//   IconButton, 
-//   Flex 
-// } from '@chakra-ui/react';
-// import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-// import { colorPalettes } from "@/components/compositions/color-palettes"
-// import { Button } from "@/components/ui/button"
-import { Box, SimpleGrid, Text, Link, Stack, Badge } from '@chakra-ui/react';
+import { Badge } from '@chakra-ui/react';
 
 const Footer = () => {
   return (

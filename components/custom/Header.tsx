@@ -6,7 +6,7 @@ import {
   Link,
   Spacer,
   Image,
-  Menu, Button
+  Button
 } from '@chakra-ui/react';
 import {
   MenuContent,

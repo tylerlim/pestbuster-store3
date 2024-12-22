@@ -1,7 +1,5 @@
 "use client";
 import { Card } from "@chakra-ui/react"
-import { Avatar } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
 
 export default function Contact() {
   return (

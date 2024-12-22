@@ -1,7 +1,7 @@
 // File: pages/product.js
 import Footer from "@/components/custom/Footer";
 import Header from "@/components/custom/Header";
-import ProductPage3 from "@/components/custom/Product3";
+// import ProductPage3 from "@/components/custom/Product3";
 import CompanyStory from "@/components/custom/Story";
 
 export default function CompanyStoryPage() {
