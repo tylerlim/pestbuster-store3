@@ -14,17 +14,19 @@ const CompanyStory = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <p className="text-gray-700">
-              Chubbies was founded in 2011 by a group of friends who found the traditional world of men&apos;s capital-F &quot;Fashion&quot; completely unrelatable. We saw pictures of shirtless men with rippling ab muscles, some standing outside of storefronts coating you with cologne, with the message of &quot;if only you buy our clothes you can try to be as cool as we are&quot; - and we were absolutely repelled.
+            At Pest Buster, a proud brand by Global Synergy PB Sdn Bhd, we believe that protecting your home should never come at the expense of your family’s health or the planet. That’s why we’ve developed innovative, eco-friendly pest control solutions that empower households and businesses to tackle pests effectively while prioritizing safety and well-being.
+            &quot;By eliminating harsh chemicals, our DIY products ensure a healthier living environment for your loved ones and prove that effective pest control and environmental stewardship can go hand in hand. Each Pest Buster solution reflects our unwavering commitment to creating a safer, greener, and healthier world—one household at a time.
+            &quot;Join us in redefining pest control. Together, we can protect our homes, safeguard our health, and build a greener future.
             </p>
             
-            <p className="text-gray-700">
+            {/* <p className="text-gray-700">
               At the same time, we saw that &quot;shorts&quot; in the marketplace were getting longer and longer, with more and more fabrication/zip/zip-ties & whoseewhatsis all over them. Where were the proper length men&apos;s shorts that defined generations of shortsmen?
-            </p>
+            </p> */}
           </div>
           
           <div>
             <Image  
-              src="/images/apple.jpg" 
+              src="/images/Michelle.jpg" 
               alt="Men by the pool" 
               className="w-full rounded-lg shadow-md"
               width={500}
@@ -33,9 +35,9 @@ const CompanyStory = () => {
           </div>
         </div>
         
-        <p className="text-gray-700">
+        {/* <p className="text-gray-700">
           Not only were shorts becoming completely unrecognizable, but they were also losing their personality, their craftsmanship. No one was focusing on this forgotten category of men&apos;s apparel, when it&apos;s a product that&apos;s so vital to get right.
-        </p>
+        </p> */}
         
         <div className="grid md:grid-cols-2 gap-6">
           <div>
@@ -49,13 +51,13 @@ const CompanyStory = () => {
           </div>
           
           <div className="space-y-4">
-            <p className="text-gray-700">
+            {/* <p className="text-gray-700">
               Finally, we founded the company in 2011, 3 years after the financial crisis, 4 years after the launch of the first iPhone, and in the wake of the rapid rise of Facebook, LinkedIn and other social networking apps. People were more stressed, comparing their lives to others on social media, and allowing work to overtake more and more of the work-life balance.
-            </p>
+            </p> */}
             
-            <p className="text-gray-700">
+            {/* <p className="text-gray-700">
               Enter Chubbies - our visceral and irreverent response to all of the above. We launched in September of 2011 and were sold out for 2+ years of our core casual shorts product.
-            </p>
+            </p> */}
           </div>
         </div>
       </Card.Body>
