@@ -1,8 +1,7 @@
 // File: pages/product.js
 import Footer from "@/components/custom/Footer";
 import Header from "@/components/custom/Header";
-import ProductLizardRep from "@/components/custom/ProductLizardRep";
-
+import ProductRoachRep from "@/components/custom/ProductRoachRep";
 
 export default function ProductPage() {
   return (
@@ -13,7 +12,7 @@ export default function ProductPage() {
         <h1 className="text-3xl font-bold mb-4">Product Page</h1>
       </header> */}
       <main>
-        <ProductLizardRep />
+        <ProductRoachRep />
       </main>
 
     <Footer />

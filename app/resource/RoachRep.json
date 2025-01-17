@@ -1,0 +1,25 @@
+{
+  "header": {
+    "availability": "Protect Your Space, Naturally",
+    "title": "Roach",
+    "subtitle": "Rep",
+    "description":
+      "Keep your living spaces lizard-free with Lizard Rep - the ultimate organic solution for homeowners/consumers. Whether you're protecting your kitchen, bedroom, or living areas, our innovative repellent ensures a lizard-free environment without compromising your family's safety.It is ideal for restaurants, hotels, offices, warehouses, and commercial establishments where maintaining a professional, pest-free environment is crucial. Lizard Rep provides a discreet, no mess, non-toxic solution to protect your workspace.",
+    "buttonText": "Add To Cart",
+    "image": "/images/RoachRep.png"
+  },
+  "infoGrid": [
+    { "title": "Advanced Science Meets Nature", "subtitle": "A Powerful, Plant-Based Solution for a Safer Tomorrow" },
+    { "title": "Long-Lasting Peace of Mind", "subtitle": "Enjoy 90 Days of Uninterrupted, Reliable Defense" },
+    { "title": "Protection That Cares for Your Loved Ones", "subtitle": "Gentle on the Environment, Safe for Your Family" },
+    { "title": "Effortless Protection, Zero Fuss", "subtitle": "No Mess, No Stress—Just Simple, Effective Use" }
+  ],
+  "aboutUs": {
+    "title": "About Us",
+    "description":
+      "Meet Emerald, the green goddess of facial oils. Emerald Deep Moisture Glow Oil provides skin with rich moisture and a glow that is lit – all in a lightweight, quick-absorbing formula. All hail, Queen Emerald."
+  },
+  "banner": {
+    "text": "Best Cosmetic Products"
+  }
+}

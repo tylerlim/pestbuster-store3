@@ -56,11 +56,11 @@ const Header = () => {
             <Link href="/lizardProduct">Lizard</Link>
           </MenuItem>
           <MenuItem value="category2">
-            <Link href="/products/category2">Category 2</Link>
+            <Link href="/roachProduct">Roach</Link>
           </MenuItem>
-          <MenuItem value="category3">
+          {/* <MenuItem value="category3">
             <Link href="/products/category3">Category 3</Link>
-          </MenuItem>
+          </MenuItem> */}
         </MenuContent>
       </MenuRoot>
   <Link href="/story" px={4} color="black">

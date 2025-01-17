@@ -1,5 +1,5 @@
 // File: pages/product.js
-import ProductPage3 from "@/components/custom/Product3";
+import ProductPage3 from "@/components/custom/ProductLizardRep";
 
 export default function lizardPage() {
   return (
