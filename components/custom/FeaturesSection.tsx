@@ -4,10 +4,10 @@ import {
   Container,
   Heading,
   VStack,
-  HStack,
+  // HStack,
   Text,
   Image,
-  Icon,
+  // Icon,
   Grid,
   // GridItem,
   // StackProps,
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
 
   return (
     <Container maxW="container.xl" py={16}>
-      <VStack gap={12 as any}>
+      <VStack gap={12}>
         <Box textAlign="center">
           <Text fontSize="sm" fontWeight="medium" color="gray.600">
             FEATURES
