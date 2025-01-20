@@ -3,19 +3,6 @@ import { Card } from "@chakra-ui/react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
-import {
-  Box,
-  Container,
-  Heading,
-  VStack,
-  HStack,
-  Text,
-
-  Icon,
-  Grid,
-  GridItem,
-  StackProps,
-} from '@chakra-ui/react';
 import FeaturesSection from "./FeaturesSection";
 
 

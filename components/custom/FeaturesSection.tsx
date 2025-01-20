@@ -9,8 +9,8 @@ import {
   Image,
   Icon,
   Grid,
-  GridItem,
-  StackProps,
+  // GridItem,
+  // StackProps,
 } from '@chakra-ui/react';
 // import { CheckCircle } from '@chakra-ui/react';
 
