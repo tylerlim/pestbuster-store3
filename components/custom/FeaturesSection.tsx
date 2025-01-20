@@ -14,19 +14,19 @@ import {
 } from '@chakra-ui/react';
 // import { CheckCircle } from '@chakra-ui/react';
 
-const Feature = ({ title, description }: { title: string; description: string }) => (
-  <HStack align="flex-start" >
-    <Icon  w={6} h={6} color="orange.300" />
-    <Box>
-      <Text fontWeight="bold" fontSize="lg" color="darkgreen">
-        {title}
-      </Text>
-      <Text color="gray.600" fontSize="md">
-        {description}
-      </Text>
-    </Box>
-  </HStack>
-);
+// const Feature = ({ title, description }: { title: string; description: string }) => (
+//   <HStack align="flex-start" >
+//     <Icon  w={6} h={6} color="orange.300" />
+//     <Box>
+//       <Text fontWeight="bold" fontSize="lg" color="darkgreen">
+//         {title}
+//       </Text>
+//       <Text color="gray.600" fontSize="md">
+//         {description}
+//       </Text>
+//     </Box>
+//   </HStack>
+// );
 
 const FeaturesSection = () => {
   const features = [
