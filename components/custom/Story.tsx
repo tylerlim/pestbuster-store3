@@ -42,7 +42,7 @@ const CompanyStory = () => {
               At the same time, we saw that &quot;shorts&quot; in the marketplace were getting longer and longer, with more and more fabrication/zip/zip-ties & whoseewhatsis all over them. Where were the proper length men&apos;s shorts that defined generations of shortsmen?
             </p> */}
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center space-y-4">
           {/* <div> */}
             <Image  
               src="/images/Michelle.jpg" 
@@ -52,6 +52,9 @@ const CompanyStory = () => {
               width={200}
               height={200}
             />
+             <p className="text-gray-700 text-center">
+      Michelle Lalitha Founder
+    </p>
           </div>
         </div>
        

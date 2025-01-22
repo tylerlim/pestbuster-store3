@@ -38,8 +38,8 @@ async function ProductRoachRep() {
     'Property Managers', 
     'Restaurateurs', 
     'Facility Managers', 
-    'Hospitality Businesses', 
-    'Warehouse Operations'
+     'Hoteliers', 
+    'Warehouse Operators'
   ];
   const file = await fs.readFile(process.cwd() + '/app/resource/RoachRep.json', 'utf8');
   const data = JSON.parse(file);
