@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Flex, Grid, Heading, Image, Text,
-  VStack, GridItem, Container,
+  VStack, 
+  // GridItem, 
+  Container,
 
  } from "@chakra-ui/react";
 import { promises as fs } from 'fs';
