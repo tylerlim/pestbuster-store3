@@ -1,0 +1,26 @@
+{
+    "header": {
+      "availability": "Protect Your Space, Naturally",
+      "title": "Bed Bug",
+      "subtitle": "Rep",
+      "description":
+        "Imagine finally getting a good night's sleep without those pesky bed bugs turning your bed into a battleground. Sound too good to be true? Meet Bed Bug Buster—your choice in the fight against these tiny terrors!",
+      "buttonText": "Add To Cart",
+      "image": "/images/begbug3.jpeg"
+    },
+    "infoGrid": [
+      { "title": "Lightning-Fast", "subtitle": "Bye-bye bed bugs in just 4 hours!" },
+      { "title": "Family-First", "subtitle": "100% safe for your little ones and furry friends" },
+      { "title": "Earth-Friendly", "subtitle": "Organic solution that loves the planet" },
+      { "title": "Wallet-Wise", "subtitle": "No need for crazy expensive pest products" }
+    ],
+    "aboutUs": {
+      "title": "About Us",
+      "description":
+        "Tired of scratching? Ready to reclaim your bed and your sleep? Bed Bug Buster has your back!."
+    },
+    "banner": {
+      "text": "Best Cosmetic Products"
+    }
+  }
+  

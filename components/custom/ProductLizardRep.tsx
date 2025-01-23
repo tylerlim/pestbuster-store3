@@ -30,32 +30,32 @@ const CoverageCard = ({ title, areas, bgColor }: { title: string; areas: string[
 
 
 async function ProductLizardRep() {
-  const residentialAreas = [
-    '700sqft', 
-    'Kitchen counters', 
-    'Pantry shelves', 
-    'Bathroom windows', 
-    'Bedroom corners', 
-    'Behind picture frames', 
-    'On top of refrigerator'
-  ];
-
-  const commercialAreas = [
-    'Food preparation areas', 
-    'Storage rooms', 
-    'Reception zones', 
-    'Warehouse corners', 
-    'Office equipment spaces'
-  ];
-
-  const targetCustomers = [
-    'Homeowners', 
-    'Property Managers', 
-    'Restaurateurs', 
-    'Facility Managers', 
-    'Hoteliers', 
-    'Warehouse Operators'
-  ];
+    const residentialAreas = [
+      '700sqft', 
+      'Kitchen counters', 
+      'Pantry shelves', 
+      'Bathroom windows', 
+      'Bedroom corners', 
+      'Behind picture frames', 
+      'On top of refrigerator'
+    ];
+  
+    const commercialAreas = [
+      'Food preparation areas', 
+      'Storage rooms', 
+      'Reception zones', 
+      'Warehouse corners', 
+      'Office equipment spaces'
+    ];
+  
+    const targetCustomers = [
+      'Homeowners', 
+      'Property Managers', 
+      'Restaurateurs', 
+      'Facility Managers', 
+       'Hoteliers', 
+      'Warehouse Operators'
+    ];
   const file = await fs.readFile(process.cwd() + '/app/resource/LizardRep.json', 'utf8');
   const data = JSON.parse(file);
 

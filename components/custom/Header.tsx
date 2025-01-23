@@ -58,6 +58,9 @@ const Header = () => {
           <MenuItem value="category2">
             <Link href="/roachProduct">Roach</Link>
           </MenuItem>
+          <MenuItem value="category2">
+            <Link href="/BedBugProduct">Bed Bug</Link>
+          </MenuItem>
           {/* <MenuItem value="category3">
             <Link href="/products/category3">Category 3</Link>
           </MenuItem> */}
