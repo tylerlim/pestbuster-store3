@@ -89,6 +89,23 @@ async function ProductLizardRep() {
           />
         </Box>
       </Flex>
+       {/* Info Grid */}
+            <Grid
+              templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+              gap="6"
+              p="8"
+              bg="gray.50"
+              textAlign="center"
+            >
+              {data.infoGrid.map((item: { title: string; subtitle: string }, index: number) => (
+                <Box key={index}>
+                  <Text fontSize="lg" fontWeight="bold" color="green.500">
+                    {item.title}
+                  </Text>
+                  <Text>{item.subtitle}</Text>
+                </Box>
+              ))}
+            </Grid>
 
       {/* Coverage Section */}
       <Container maxW="container.xl" py={10}>
@@ -98,7 +115,7 @@ async function ProductLizardRep() {
               Lizard Rep
             </Heading>
             <Text fontSize="xl" color="gray.600">
-              Natural Lizard Repellent Solution
+              Oganic Lizard Repellent Solution
             </Text>
           </Box>
 

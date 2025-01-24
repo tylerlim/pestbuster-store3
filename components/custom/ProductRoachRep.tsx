@@ -16,13 +16,18 @@ import { promises as fs } from 'fs';
 
 async function ProductRoachRep() {
   const residentialAreas = [
-    '700sqft', 
-    'Kitchen counters', 
+    // '700sqft', 
+    'Kitchen', 
     'Pantry shelves', 
-    'Bathroom windows', 
-    'Bedroom corners', 
-    'Behind picture frames', 
-    'On top of refrigerator'
+    // 'Bathroom windows', 
+    // 'Bedroom corners', 
+    // 'Behind picture frames', 
+    // 'On top of refrigerator',
+    "Store rooms",
+    "Cabinets",
+    "Manholes",
+    "Cracks and crevices",
+    "Pallet storage spaces"
   ];
 
   const commercialAreas = [
@@ -125,11 +130,11 @@ async function ProductRoachRep() {
       <Container maxW="container.xl" py={10}>
       <VStack  align="stretch">
         <Box textAlign="center">
-          <Heading as="h1" size="2xl" mb={4}>
-            Lizard Rep
-          </Heading>
+          {/* <Heading as="h1" size="2xl" mb={4}>
+            Roach Rep
+          </Heading> */}
           <Text fontSize="xl" color="gray.600">
-            Natural Lizard Repellent Solution
+          Oganic Cockrach Repellent Solution
           </Text>
         </Box>
 
@@ -191,13 +196,14 @@ async function ProductRoachRep() {
             <Flex alignItems="center">
               {/* <Icon as={DropletIcon} w={6} h={6} color="teal.500" mr={3}/> */}
               <Text>
-                Creates an invisible barrier that effectively deters lizards
+                Apply at High infestation areas for best results
               </Text>
             </Flex>
             <Flex alignItems="center">
               {/* <Icon as={DropletIcon} w={6} h={6} color="teal.500" mr={3}/> */}
               <Text>
-                No harsh chemicals or messy applications
+                Reapply periodically 
+                {/* No harsh chemicals or messy applications */}
               </Text>
             </Flex>
           </VStack>
@@ -210,9 +216,9 @@ async function ProductRoachRep() {
           <VStack >
             <Text>1. Identify problem areas</Text>
             <Text>2. Tear off the back sticker</Text>
-            <Text>3. Place Lizard Rep cube</Text>
+            <Text>3. Place Roach Rep cube</Text>
             <Text fontWeight="bold" color="green.700">
-              Enjoy 90-days of lizard-free environment!
+              Enjoy 90-days of Cockrach-free environment!
             </Text>
           </VStack>
         </Box>
